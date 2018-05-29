@@ -22,6 +22,7 @@ li{
 	height: 40px;
 	line-height: 40px;
 	color: #666;
+	cursor: pointer;
 }
 input{
 	border: 0;
@@ -35,6 +36,22 @@ input{
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #2980b9;
+}
+span{
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.5s linear;
+	cursor: pointer;
+	opacity: 0;
+}
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
 }
 input:focus{
 	background: white;
@@ -55,4 +72,9 @@ li:nth-of-type(odd) {
 .done{
 	color: gray;
 	text-decoration-line: line-through;
+}
+
+.fa-pencil-alt{
+	float: right;
+	color: white;
 }
