@@ -1,0 +1,1 @@
+console.log("all system works fine");
